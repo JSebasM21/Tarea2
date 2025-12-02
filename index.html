@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de menú de navegación responsive con efectos modernos">
+    <title>Navegación Moderna | Ejercicio 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">TechCorp</span>
+            </a>
+
+            <!-- Toggle para móvil (hamburguesa) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portafolio" class="nav-link">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#equipo" class="nav-link">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link btn-cta">Contactar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de ejemplo para demostrar scroll -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Navegación Moderna y Responsive</h1>
+            <p>Este menú demuestra el uso de pseudo-clases CSS y diseño responsive.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Efectos Hover</h3>
+                    <p>Los enlaces cambian de color al pasar el mouse con transiciones suaves.</p>
+                    <div class="demo-hover">
+                        <button class="demo-btn">Pasa el mouse aquí</button>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Estado Activo</h3>
+                    <p>El enlace actual tiene un estilo diferente para indicar la página actual.</p>
+                    <div class="demo-active">
+                        <span class="demo-indicator">← Mira el menú arriba</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>El menú se adapta a dispositivos móviles con un botón hamburguesa.</p>
+                    <div class="demo-responsive">
+                        <span class="demo-text">Reduce el ancho de tu navegador</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="servicios">
+        <div class="container">
+            <h2>🛠️ Sección de Servicios</h2>
+            <p class="section-intro">Contenido de ejemplo para demostrar la navegación. Desplázate hacia abajo para ver más secciones.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web modernos y funcionales con las últimas tecnologías.</p>
+                    <ul class="service-list">
+                        <li>✓ HTML5, CSS3, JavaScript</li>
+                        <li>✓ Diseño Responsive</li>
+                        <li>✓ Optimización SEO</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Diseño UI/UX</h3>
+                    <p>Diseñamos interfaces intuitivas y atractivas para tus usuarios.</p>
+                    <ul class="service-list">
+                        <li>✓ Prototipado</li>
+                        <li>✓ Diseño de interfaces</li>
+                        <li>✓ Experiencia de usuario</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Apps Móviles</h3>
+                    <p>Desarrollamos aplicaciones móviles nativas e híbridas.</p>
+                    <ul class="service-list">
+                        <li>✓ iOS y Android</li>
+                        <li>✓ Progressive Web Apps</li>
+                        <li>✓ Integración con APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="portafolio">
+        <div class="container">
+            <h2>💼 Sección de Portafolio</h2>
+            <p class="section-intro">Aquí iría el portafolio de proyectos.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🌐</div>
+                    <h3>Proyecto Web E-commerce</h3>
+                    <p>Tienda online completa con carrito de compras y pasarela de pago.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">📊</div>
+                    <h3>Dashboard Analytics</h3>
+                    <p>Panel de control para visualización de datos en tiempo real.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">API REST</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🎮</div>
+                    <h3>App Mobile Gaming</h3>
+                    <p>Aplicación móvil de juegos multijugador en tiempo real.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="equipo">
+        <div class="container">
+            <h2>👥 Sección del Equipo</h2>
+            <p class="section-intro">Información sobre el equipo de trabajo.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">👨‍💻</div>
+                    <h3>Jhon Moreno</h3>
+                    <p class="member-role">CEO & Founder</p>
+                    <p class="member-bio">10+ años de experiencia en desarrollo web y liderazgo de equipos.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👩‍🎨</div>
+                    <h3>Linda Quispe</h3>
+                    <p class="member-role">Lead Designer</p>
+                    <p class="member-bio">Especialista en UX/UI con pasión por crear experiencias memorables.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Dribbble</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="blog">
+        <div class="container">
+            <h2>📝 Sección del Blog</h2>
+            <p class="section-intro">Artículos y noticias recientes.</p>
+            
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="post-date">28 Nov 2025</div>
+                    <h3>Las mejores prácticas de CSS en 2025</h3>
+                    <p>Descubre las técnicas más modernas para escribir CSS eficiente y mantenible.</p>
+                    <a href="#" class="read-more">Leer más →</a>
+                </article>
+                <article class="blog-post">
+                    <div class="post-date">25 Nov 2025</div>
+                    <h3>JavaScript: Del básico al avanzado</h3>
+                    <p>Una guía completa para dominar JavaScript desde cero hasta nivel experto.</p>
+                    <a href="#" class="read-more">Leer más →</a>
+                </article>
+                <article class="blog-post">
+                    <div class="post-date">20 Nov 2025</div>
+                    <h3>Diseño Responsive: Guía completa</h3>
+                    <p>Todo lo que necesitas saber sobre diseño responsive y mobile-first.</p>
+                    <a href="#" class="read-more">Leer más →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="contacto">
+        <div class="container">
+            <h2>📧 Sección de Contacto</h2>
+            <p class="section-intro">Formulario de contacto y datos.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Santa Cruz de la Sierra, Bolivia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Jhon79441@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+591 69240355</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TechCorp. Ejercicio de navegación responsive creado con ❤️</p>
+            <p class="footer-note">Prueba a reducir el tamaño de la ventana para ver el menú responsive</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para el menú hamburguesa -->
+    <script src="script.js"></script>
+</body>
+</html>
